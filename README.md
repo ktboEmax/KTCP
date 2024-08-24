@@ -19,7 +19,8 @@ int main() {
     * 创建成功返回KSOCKET_SUC 
     * 失败则返回KSOCKET_ERR
     */
-    tcp.Kbindf(9999, "127.0.0.1"); // 以上代码等同于Ktcpser tcp(9999,"127.0.0.1");
+    tcp.Kbindf(9999, "127.0.0.1");
+    // 以上代码等同于Ktcpser tcp(9999,"127.0.0.1");
     
     /*
     * 设置最大监听数量
@@ -85,7 +86,8 @@ int main() {
     * Kconnect连接服务器，第一个参数为服务器端口，第二个端口为服务器IP
     */
     Ktcpcli cli(AF_INET);
-    cli.Kconnect(9999, "127.0.0.1"); // 以上代码等同于Ktcpcli cli(9999, "127.0.0.1");
+    cli.Kconnect(9999, "127.0.0.1");
+    // 以上代码等同于Ktcpcli cli(9999, "127.0.0.1");
     
     /*
     * Ksends(string)发送消息给服务器，若发送成功返回KSOCKET_SUC，若失败则返回KSOCKET_ERR;
